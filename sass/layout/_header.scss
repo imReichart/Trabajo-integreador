@@ -2,11 +2,20 @@
 /* HEADER                                            */
 /* ------------------------------------------------- */
 
+.section-cards__header{
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+    padding: 1em;
+    flex-direction: column;
+}
+
 .main-header {
     display: flex;
     flex-direction: column;
+    
 
-    @media (max-width: 768px) {
+    @media (max-width: 320px) {
         & { /* .main-header */
             flex-direction: column-reverse;
         }
@@ -39,7 +48,7 @@
         justify-content: center;
         
 
-        @media (max-width: 768px) {
+        @media (max-width: 320px) {
             & {
                 flex-direction: column;
             }
@@ -59,7 +68,7 @@
         text-decoration: none;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 320px) {
         & {
             display: none;
         }
@@ -73,43 +82,57 @@
 
 .search-bar {
     display: flex;
-    justify-content: space-between;
+   justify-content: center;
+   width: 100%;
+   
+   
 
     &__logo-container, /* search-bar__logo-container */
     &__form-container { /* search-bar__form-container */
         padding: 1em;
+
+        
     }
 
     &__logo-container {
-        background-color: #2FA4FF;
+        background-color: #0E185F;
+        border-bottom-left-radius: 10px;
+        
     }
 
     &__form-container {
-        background-color: #2FA4FF;
+        background-color: #0E185F;
         display: flex;
-        flex-basis: 100%; /* width: 100% */
         justify-content: center;
+        flex-basis: 30%; 
     }
 
     &__form-label {
-        background-color: #E8FFC2;
-        border-radius: 3px;
+        background-color: #0E185F;
+        padding: 4px;
+        color: #fafafa;
+        align-items: stretch;
+        
     }
 
     &__form-search {
-        background-color: #E8FFC2;
+        background-color: #fafafa;
         width: 70%;
+        height: 60%;
     }
 
     &__form-submit {
-        background-color: #2e4d4d;
+        background-color: #2e434d;
         color: white;
+        border-radius: 5px;
+        height: 63%;
     }
 
     &__carrito-container {
-        padding: 15px;
-        flex: 0 0 3em; /* shorthand (grow shrink basis)  basis = 3*16px => 48 */
-        background-color: #2FA4FF;
+        padding: 16px;
+        background-color: #0E185F;
+        color: white;
+        border-bottom-right-radius: 10px;
         
     }
 
@@ -123,7 +146,6 @@
 
 .menu-toogle {
     display: none;
-    background-color: red;
     flex: 0 0 3em;
     position: relative;
     cursor: pointer;
@@ -156,7 +178,7 @@
         bottom: .8em;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 320px) {
         & {
             display: block;
         }

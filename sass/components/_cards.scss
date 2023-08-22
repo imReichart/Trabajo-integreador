@@ -1,3 +1,5 @@
+
+
 .card {
     outline: none;
     width: 220px;
@@ -6,10 +8,11 @@
     overflow: hidden;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background-color: orange;
     box-shadow: 0 1px 5px rgba(0,0,0, .2), 0 0 3px rgba(0,0,0, .3);
+    color: white;
+    text-decoration: none;
 
-    transition: all .2s; /* No puede ser all */
+    transition: .2s; 
 
     &:hover, /* .card:hover */
     &:focus {
@@ -18,47 +21,58 @@
         box-shadow: 0 7px 8px rgba(0,0,0, .05), 0 3px 3px rgba(0,0,0, .01);
     }
 
-    &:nth-child(7n + 1) {
-        background-image: linear-gradient(to top, #E8FFC2 0%, #60efff 30%);
+    &:nth-child(1) {
+        background-image: linear-gradient(to top, blue 10%, red 20%, yellow 50%);
     }
 
-    &:nth-child(7n + 2) {
-        background-image: linear-gradient(to top, #696eff 0%, #00FFDD 30%);
+    &:nth-child(2) {
+        background-image: linear-gradient(to top, black 0%, grey 30%);
     }
 
-    &:nth-child(7n + 3) {
-        background-image: linear-gradient(to top, #2FA4FF 0%, #0E185F 30%);
+    &:nth-child(3) {
+        background-image: linear-gradient(to top, orange 20%, green 40%);
     }
 
-    &:nth-child(7n + 4) {
-        background-image: linear-gradient(to top, #E8FFC2 0%, #2FA4FF 30%);
+    &:nth-child(4) {
+        background-image: linear-gradient(to top, black 10%, gold 30%);
     }
 
-    &:nth-child(7n + 5) {
-        background-image: linear-gradient(to top, #0E185F 0%, #00FFDD 30%);
+    &:nth-child(5) {
+        background-image: linear-gradient(to top, black 10%, yellow 30%);
     }
 
-    &:nth-child(7n + 6) {
-        background-image: linear-gradient(to top, #0E185F 0%, #00FFDD 30%);
+    &:nth-child(6) {
+        background-image: linear-gradient(to top, olive 10%, gold 30%, red 50%);
     }
 
-    &:nth-child(7n + 7) {
-        background-image: linear-gradient(to top, #0E185F 0%, #00FFDD 30%);
+    &:nth-child(7) {
+        background-image: linear-gradient(to top, blueviolet 20%, red 30%);
+    }
+
+    &:nth-child(8) {
+        background-image: linear-gradient(to top, black 10%, grey 30%);
+    }
+
+    &:nth-child(9) {
+        background-image: linear-gradient(to top, black 10%, grey 30%);
+    }
+
+    &:nth-child(10) {
+        background-image: linear-gradient(to top, black 10%, grey 30%);
     }
 
 
 
     &__image-container {
         height: 200px;
-        background-color: blue;
         overflow: hidden;
-        clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px); /* estado inicial */
+        clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
 
     }
 
     &:hover &__image-container,
     &:focus &__image-container {
-        clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px); /* estado final */
+        clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px);
     }
 
     &__image {
@@ -70,12 +84,13 @@
 
     &:hover &__image,
     &:focus &__image {
-        transform: scale(1.4) rotate(5deg);
+        transform: scale(1.4);
         transform-origin: center;
     }
 
     &__content {
         padding: 1em;
+        font-size: small;
     }
 
     @media (min-width: 1024px) {
@@ -97,7 +112,7 @@
 
         & &__image-container { /* .card .card_image-container */
             width: 40%;
-            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+            clip-path: polygon (0 0, 100% 0, 95% 100%, 0% 100%);
         }
 
         &:hover &__image-container, /* .card:hover .card__image-container  */
