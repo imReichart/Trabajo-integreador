@@ -15,7 +15,7 @@
     flex-direction: column;
     
 
-    @media (max-width: 320px) {
+    @media (max-width: 500px) {
         & { /* .main-header */
             flex-direction: column-reverse;
         }
@@ -31,6 +31,7 @@
 
     &:checked ~ .search-bar .menu-toogle__label {
         background-color: #0E185F;
+    
     }
 }
 
@@ -40,6 +41,7 @@
 
 .nav-bar {
     background-color: #0E185F;
+    display: none;
    
 
     &__nav-list { /* .nav-bar__nav-list */
@@ -48,9 +50,12 @@
         justify-content: center;
         
 
-        @media (max-width: 320px) {
+        @media (min-width: 1024px) {
             & {
-                flex-direction: column;
+                flex-direction: row;
+                justify-content: center;
+                gap: 5em;
+                padding: 1em;
             }
         }
     }
@@ -68,11 +73,22 @@
         text-decoration: none;
     }
 
-    @media (max-width: 320px) {
+    @media (min-width: 1024px) {
         & {
-            display: none;
+            border: none;
+            letter-spacing: normal;
+            position: relative;
+            padding: .2em;
         }
     }
+
+    @media (min-width: 1024px) {
+        & {
+            display: block;
+        }
+    }
+        
+    
 }
 
 
@@ -96,7 +112,6 @@
 
     &__logo-container {
         background-color: #0E185F;
-        border-bottom-left-radius: 10px;
         
     }
 
@@ -104,7 +119,18 @@
         background-color: #0E185F;
         display: flex;
         justify-content: center;
-        flex-basis: 30%; 
+        flex-basis: 100%; 
+
+        @media (min-width: 1024px) {
+            & {
+                flex-basis: 40%;
+            }
+        }
+        @media (min-width: 426px) and (max-width: 768px) {
+            & {
+                justify-self: center;
+            }
+        }
     }
 
     &__form-label {
@@ -117,22 +143,36 @@
 
     &__form-search {
         background-color: #fafafa;
+        padding: .7em;
+        border: solid 2px #000;
+        border-radius: 7px;
         width: 70%;
-        height: 60%;
+        margin-right: .2em;
+        color: #000;
     }
 
     &__form-submit {
         background-color: #2e434d;
-        color: white;
+        color: #fff;
         border-radius: 5px;
         height: 63%;
     }
 
     &__carrito-container {
+        align-items: center;
         padding: 16px;
         background-color: #0E185F;
-        color: white;
-        border-bottom-right-radius: 10px;
+        color: #fff;
+        order: 1;
+
+        @media (min-width: 1024px) {
+            & {
+                order: 3;
+            }
+        }
+        @media (min-width: 426px) and (max-width: 768px){
+          border-bottom-right-radius: 0px;
+        }
         
     }
 
@@ -149,10 +189,11 @@
     flex: 0 0 3em;
     position: relative;
     cursor: pointer;
+    order: 3;
 
     &__label {
         display: block;
-        background-color: black;
+        background-color: #0E185F;
         height: 100%;
     }
 
@@ -178,7 +219,7 @@
         bottom: .8em;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 1024px) {
         & {
             display: block;
         }

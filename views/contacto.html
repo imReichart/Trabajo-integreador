@@ -32,6 +32,59 @@
 
   </header>
 
+  <main>
+    <section class="section-contact">
+      <head class="contact-header">
+        <h1>¿Algún problema?</h1>
+        <p>¡Contacate con nuestro personal!</p>
+      </head>
+    </section>
+
+    <div class="form-container">
+      <form action="#" class="form-container__form">
+        <label for="name" class="form-container__label">Nombre completo</label>
+          <input type="text" id="name" class="form-container__input" required>
+          <label for="mail" class="form-container__label">Email</label>
+          <input type="email" id="mail" class="form-container__input" required>
+          <label for="telefono" class="form-container__label">Teléfono</label>
+          <input type="number" id="telefono" class="form-container__input" required>
+          <label for="comentarios" class="form-container__label">Comentarios</label>
+          <textarea name="comentarios" id="comentarios" cols="30" rows="10" class="form-container__textarea"></textarea>
+
+          <button type="submit" class="form-container__button">Enviar</button>
+      </form>
+    </div>
+
+
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="social-media">
+      <h2 class="social-media__title">Seguínos</h2>
+      <ul class="social-media__list">
+        <li class="social-media__list-item">
+          <a href="#" class="social-media__list-link"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+        </li>
+        <li class="social-media__list-item">
+          <a href="#" class="social-media__list-link"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+        </li>
+        <li class="social-media__list-item">
+          <a href="#" class="social-media__list-link"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="newsletter">
+      <h2 class="newsletter__title">Novedades</h2>
+      <form action="#" class="newsletter__form-container">
+        <input type="email" class="newsletter__form-email" id="newsletter" placeholder=" ">
+        <label for="newsletter" class="newsletter__form-label">¡Dejanos tu correo electrónico para mantenerte informado!</label>
+      </form>
+    </div>
+
+  </footer>
+
+
 
   
   <script type="module" src="/main.js"></script>

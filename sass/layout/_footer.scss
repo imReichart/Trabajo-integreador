@@ -1,6 +1,6 @@
 .main-footer {
     background-color: #0E185F;
-    color: white;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -63,21 +63,13 @@
         margin-top: 1em;
     }
 
-    &__form-label {
-        position: absolute;
-        top: 0;
-        left: 10px;
-        background-color: #0E185F;
-        padding: .2em;
-    }
-
     &__form-email {
         padding: 1em;
         background-color: #0E185F;
-        color: white;
+        color: #fff;
         font-size: 1em;
-        border: solid 2px black;
-        border-radius: 5px;
+        border: solid 2px #000;
+        border-radius: 32px;
         outline: none;
         width: 100%;
     } 
