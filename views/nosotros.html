@@ -16,24 +16,77 @@
     <nav class="nav-bar"> <!-- nav-bar -->
       <ul class="nav-bar__nav-list">
         <li class="nav-bar__nav-item">
-          <a href="#" class="nav-bar__nav-link">Inicio</a>
+          <a href="/index.html" class="nav-bar__nav-link">Inicio</a>
         </li>
         <li class="nav-bar__nav-item">
           <a href="#" class="nav-bar__nav-link">Alta</a>
         </li>
         <li class="nav-bar__nav-item">
-          <a href="#" class="nav-bar__nav-link">Contacto</a>
+          <a href="/views/contacto.html" class="nav-bar__nav-link">Contacto</a>
         </li>
         <li class="nav-bar__nav-item">
-          <a href="#" class="nav-bar__nav-link">Nosotros</a>
+          <a href="/views/nosotros.html" class="nav-bar__nav-link">Nosotros</a>
         </li>
       </ul>
     </nav> <!-- nav-bar -->
 
+    <div class="search-bar"> <!-- search-bar -->
+      <div class="search-bar__logo-container"><img src="/img/logo.png" width="45px" height="40px" alt="logo de la tienda"></div>
+      <form action="#" class="search-bar__form-container">
+        <label for="busqueda" class="search-bar__form-label">Buscar</label>
+        <input type="search" class="search-bar__form-search" id="busqueda">
+        <input type="submit" class="search-bar__form-submit" value="Buscar">
+      </form>
+      <div class="search-bar__carrito-container"><i class="fa-solid fa-cart-shopping fa-2xl"></i></div>
+      <div class="menu-toogle">
+        <label for="menu" class="menu-toogle__label">
+          <span class="menu-toogle__top-bread"></span>
+          <span class="menu-toogle__meat"></span>
+          <span class="menu-toogle__bottom-bread"></span>
+        </label>
+      </div>
+    </div>
 
   </header>
 
+  <main>
+    <div class="nosotros-header">
+    <h1 class="nosotros-header__title">SSJ</h1>
+  </div>
+  
+  <section class="nosotros-section">
+    <p class="nosotros-section__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, a deleniti repellendus minus perferendis sunt totam est autem praesentium nam repellat ipsum nulla iste enim consequuntur debitis odio cumque ab quaerat nemo eum ipsam quisquam! Harum eaque atque ex rerum sequi? Numquam et voluptatibus cum expedita id iusto, deserunt placeat?</p>
+    <p class="nosotros-section__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci quam deleniti sint? Libero aperiam cupiditate, veritatis assumenda tempora nihil accusantium reprehenderit distinctio rem dolorem ut, voluptas dolore necessitatibus! Maiores quae nostrum culpa tempora laudantium doloremque, odit voluptate? Voluptatibus delectus consequatur dolores nobis dolorum aperiam, doloremque odit minus accusamus, saepe veritatis!</p>
+    <p class="nosotros-section__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit officia dicta doloribus minima? Repellendus minima recusandae tempore iste eaque harum quaerat, quod neque numquam at tempora laboriosam quae odio quasi earum odit sed, itaque enim! Enim tempora laboriosam itaque facilis voluptatem voluptas rem ullam corrupti. Accusantium pariatur autem rerum possimus.</p>
+    <p class="nosotros-section__text">¡Gracias por confiar en nuestro equipo!</p>
+  </section>
 
+  </main>
+
+  <footer class="main-footer">
+    <div class="social-media">
+      <h2 class="social-media__title">Seguínos</h2>
+      <ul class="social-media__list">
+        <li class="social-media__list-item">
+          <a href="#" class="social-media__list-link"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+        </li>
+        <li class="social-media__list-item">
+          <a href="#" class="social-media__list-link"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+        </li>
+        <li class="social-media__list-item">
+          <a href="#" class="social-media__list-link"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="newsletter">
+      <h2 class="newsletter__title">Novedades</h2>
+      <form action="#" class="newsletter__form-container">
+        <input type="email" class="newsletter__form-email" id="newsletter" placeholder=" ">
+        <label for="newsletter" class="newsletter__form-label">¡Dejanos tu correo electrónico para mantenerte informado!</label>
+      </form>
+    </div>
+
+  </footer>
   
   <script type="module" src="/main.js"></script>
 </body>
